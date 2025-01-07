@@ -1,0 +1,210 @@
+/* Reset */
+body, h2, p, ul, li, a, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0077c8;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 100%;
+}
+.profile-container {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #0077c8;
+}
+.profile-info {
+    text-align: left;
+}
+.profile-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.profile-info p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+.btn-subscribe {
+    background: #0077c8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Latest Review Section */
+.latest-review {
+    text-align: center;
+    margin: 2rem 0;
+    width: 90%;
+}
+.latest-review h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.latest-review p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 90%;
+}
+.feature {
+    max-width: 200px;
+}
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.feature p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Comments */
+.comments {
+    text-align: center;
+    margin: 2rem;
+    width: 90%;
+}
+.comments textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.btn-send {
+    background: #0077c8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+footer p {
+    margin-bottom: 0.5rem;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}

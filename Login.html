@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">EllBeach</div>
+            <ul class="nav-links">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Praias</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="profile-icon">
+                <img src="user-icon.png" alt="User Icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="user-profile">
+            <div class="profile-container">
+                <img src="default-profile.png" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <h2>Perfil do Usuário</h2>
+                    <p>Sign up for our newsletter to receive updates and exclusive offers.</p>
+                    <button class="btn-subscribe">Sign</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-review">
+            <h2>Ultima review</h2>
+            <p>Get the latest news and updates delivered straight to your inbox.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="exclusive-offers-icon.png" alt="Exclusive Offers">
+                <h3>Exclusive Offers</h3>
+                <p>Access to special promotions</p>
+            </div>
+            <div class="feature">
+                <img src="announce-icon.png" alt="Announce">
+                <h3>Announce</h3>
+                <p>Be the first to know about new arrivals</p>
+            </div>
+        </section>
+
+        <section class="comments">
+            <h2>Comments</h2>
+            <textarea placeholder="Leave your review..."></textarea>
+            <button class="btn-send">Enviar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 All rights reserved</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
 </body>
+
 </html>
