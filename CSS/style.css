@@ -1,29 +1,26 @@
 /* Reset */
-body, h2, p, ul, li, a, button, textarea {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
-    color: #333;
-    padding: 0;
-    margin: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Header */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #0077c8;
     padding: 1rem 2rem;
-    color: #fff;
+    color: white;
 }
 .nav-links {
     list-style: none;
@@ -31,7 +28,7 @@ body {
     gap: 1rem;
 }
 .nav-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
 }
@@ -45,166 +42,153 @@ body {
     border-radius: 50%;
 }
 
-/* Main Content */
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+/* Perfil e Newsletter */
 .user-profile {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #f1f1f1;
+}
+.profile-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    width: 100%;
+    gap: 1rem;
 }
-.profile-container {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-}
-.profile-picture {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid #0077c8;
-}
-.profile-info {
-    text-align: left;
-}
-.profile-info h2 {
+.profile-header h2 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    color: #0077c8;
 }
-.profile-info p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    color: #555;
-}
-.btn-subscribe {
-    background: #0077c8;
-    color: #fff;
-    border: none;
+.logout-button {
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    background: #0077c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 0.9rem;
+}
+.logout-button:hover {
+    background: #005fa3;
+}
+.user-profile p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
 }
 
-/* Latest Review Section */
+/* Última Review */
 .latest-review {
-    text-align: center;
-    margin: 2rem 0;
-    width: 90%;
+    text-align: left;
+    max-width: 300px;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 .latest-review h2 {
     font-size: 1.5rem;
+    color: #0077c8;
     margin-bottom: 0.5rem;
 }
 .latest-review p {
     font-size: 1rem;
-    color: #555;
+    color: #333;
 }
 
-/* Features */
-.features {
+/* Ícones piramidais (parte direita) */
+.icon-section {
     display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 5%;  /* Posiciona os ícones na parte direita da tela */
+    top: 30%;  /* Ajusta a altura para que os ícones fiquem abaixo da área do perfil */
+}
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.icon-row.top {
+    margin-bottom: 1rem;
+}
+.icon {
     text-align: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 90%;
 }
-.feature {
-    max-width: 200px;
+.icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    padding: 10px;
 }
-.feature img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 0.5rem;
+.icon h3 {
+    font-size: 1rem;
+    color: #0077c8;
 }
-.feature h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-.feature p {
+.icon p {
     font-size: 0.9rem;
     color: #555;
 }
 
-/* Comments */
+/* Comentários (parte esquerda) */
 .comments {
-    text-align: center;
-    margin: 2rem;
-    width: 90%;
+    text-align: left;
+    margin-top: 22rem;  /* Aumenta a margem superior para descer ainda mais os comentários */
+    margin-left: 5%;  /* Posiciona os comentários mais para a esquerda */
+    padding: 1rem;
+    max-width: 500px;
 }
 .comments textarea {
     width: 100%;
-    max-width: 600px;
-    height: 100px;
+    height: 80px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
 }
-.btn-send {
-    background: #0077c8;
-    color: #fff;
-    border: none;
+.submit-review {
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    background: #0077c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
     cursor: pointer;
-    font-size: 0.9rem;
+}
+.submit-review:hover {
+    background: #005fa3;
+}
+
+.submit-review:hover {
+    background: #005fa3;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: #fff;
+    background: #0077c8;
+    color: white;
     text-align: center;
     padding: 1rem;
-    width: 100%;
-}
-footer p {
-    margin-bottom: 0.5rem;
-}
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    margin-top: auto;  /* Garante que o footer sempre fique no final */
 }
 .footer-links a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 0.9rem;
+    margin: 0 0.5rem;
 }
 
-/* Responsive Design */
+/* Responsividade */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .latest-review {
+        position: static;
+        text-align: center;
+        margin-bottom: 1rem;
     }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
+    .icon-section {
+        position: static;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
-    .profile-container {
+    .icon-row {
         flex-direction: column;
-        align-items: center;
-    }
-    .features {
-        flex-direction: column;
-        align-items: center;
     }
 }
