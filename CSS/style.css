@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset 
 * {
     margin: 0;
     padding: 0;
@@ -12,34 +12,64 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+*/
 
-/* Navbar */
-.navbar {
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0077c8;
-    padding: 1rem 2rem;
-    color: white;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.nav-links {
-    list-style: none;
+
+header .logo img {
+    max-height: 50px;
+}
+
+header nav ul {
     display: flex;
-    gap: 1rem;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
 }
-.nav-links a {
-    color: white;
+
+header nav ul li a {
     text-decoration: none;
-    font-size: 1rem;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    background-color: #2196F3; /* cor azul*/
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+header nav ul li a:hover {
+    background-color: #1769aa; /* azul escuro*/
 }
-.profile-icon img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+
+header .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 55px; /* Espaço entre os ícones */
+}
+
+header .user-icons img {
+    max-height: 30px;
+    cursor: pointer;
+}
+/* Banner */
+.banner {
+    text-align: center;
+    
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: px;
 }
 
 /* Perfil e Newsletter */
