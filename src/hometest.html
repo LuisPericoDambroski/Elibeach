@@ -5,74 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elibeach</title>
-    <link rel="stylesheet" href="/CSS/styletes.css">
+    <link rel="stylesheet" href="/src/CSS/styletes.css">
 
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="/hometest.html">
-                <img src="/IMAGENS/logo.png" alt="Elibeach Logo">
+            <a href="/src/hometest.html">
+                <img src="/src/IMAGENS/logo.png" alt="Elibeach Logo">
             </a>
-
         </div>
         <nav>
             <ul>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Praias.html">Praias</a></li>
+                <li><a href="/src/Sobre.html">Sobre</a></li>
+                <li><a href="/src/Praias.html">Praias</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#Contato">Contato</a></li>
             </ul>
         </nav>
         <div class="user-icons">
             <div class="search-container">
-                <img src="/IMAGENS/search-icon.png" alt="Search" id="search-icon">
+                <img src="/src/IMAGENS/search-icon.png" alt="Search" id="search-icon">
                 <input type="text" class="search-bar" placeholder="Search in site">
             </div>
-
-            <img src="/IMAGENS/user-icon.png" alt="User" onclick="toggleUserMenu()">
+            <img src="/src/IMAGENS/user-icon.png" alt="User" onclick="toggleUserMenu()">
         </div>
         <div class="user-menu">
             <ul>
-                <li><a href="gabling.html">Gerenciar conta</a></li>
-                <li><a href="gabling.html">Reviews</a></li>
-                <li><a href="gabling.html">Notificações</a></li>
+                <li><a href="/src/gabling.html">Gerenciar conta</a></li>
+                <li><a href="/src/gabling.html">Reviews</a></li>
+                <li><a href="/src/gabling.html">Notificações</a></li>
                 <li><a href="#">Sair</a></li>
             </ul>
         </div>
-        <script src="/JS/searchbar.js"></script>
+        <script src="/src/JS/searchbar.js"></script>
     </header>
-
-
 
     <main>
         <!-- Banner -->
         <div class="slideshow-container">
             <!-- Início do Banner -->
             <div class="mySlides fade">
-                <img src="/IMAGENS/banner.png" style="width:100%">
-
+                <img src="/src/IMAGENS/banner.png" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="/IMAGENS/highlight4.jpg" style="width:100%">
-
+                <img src="/src/IMAGENS/highlight4.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
-                <img src="/IMAGENS/highlight8.webp" style="width:100%">
-
+                <img src="/src/IMAGENS/highlight8.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="/IMAGENS/highlight10.webp" style="width:100%">
-
+                <img src="/src/IMAGENS/highlight10.webp" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img src="/IMAGENS/highlight12.webp" style="width:100%">
-
+                <img src="/src/IMAGENS/highlight12.webp" style="width:100%">
             </div>
-            
 
             <!-- PONTOS -->
             <div class="dots-container">
@@ -81,35 +71,31 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span>
                 <span class="dot" onclick="currentSlide(5)"></span>
-                
             </div>
             <!-- Setas de Navegação -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             <!-- Fim do Banner -->
-            <script src="/JS/carrosel.js"></script>
+            <script src="/src/JS/carrosel.js"></script>
         </div>
-
-
 
         <!-- Categorias -->
         <section class="categories">
             <div class="category">
                 <a href="#">
                     <div class="image-container">
-                        <img src="/IMAGENS/lazer.jpg" alt="Lazer">
-                        <img class="icon" src="/IMAGENS/iconlazer.png" alt="Ícone Lazer">
+                        <img src="/src/IMAGENS/lazer.jpg" alt="Lazer">
+                        <img class="icon" src="/src/IMAGENS/iconlazer.png" alt="Ícone Lazer">
                         <h3>Lazer</h3>
                     </div>
                 </a>
             </div>
             <div class="category">
-                <a
-                    href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjfiOiBn
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjfiOiBn
             vCKAxW8FbkGHVtSN9IQFnoECA4QAQ&url=https%3A%2F%2Fwww.trivago.com.br%2F&usg=AOvVaw2EhJI8LDpTJgjwNFPHDjsB&opi=89978449">
                     <div class="image-container">
-                        <img src="/IMAGENS/hospedagem.jfif" alt="Hospedagem">
-                        <img class="icon" src="/IMAGENS/iconhospedagem.png" alt="Ícone Hospedagem">
+                        <img src="/src/IMAGENS/hospedagem.jfif" alt="Hospedagem">
+                        <img class="icon" src="/src/IMAGENS/iconhospedagem.png" alt="Ícone Hospedagem">
                         <h3>Hospedagem</h3>
                     </div>
                 </a>
@@ -117,92 +103,90 @@
             <div class="category">
                 <a href="#">
                     <div class="image-container">
-                        <img src="/IMAGENS/midias.jfif" alt="Mídias">
-                        <img class="icon" src="/IMAGENS/iconeeventos.png" alt="Ícone Mídias">
+                        <img src="/src/IMAGENS/midias.jfif" alt="Mídias">
+                        <img class="icon" src="/src/IMAGENS/iconeeventos.png" alt="Ícone Mídias">
                         <h3>Mídias</h3>
                     </div>
                 </a>
             </div>
         </section>
 
-
         <!-- Destaques -->
-         <h1 class="destaque"> Destaques</h1>
+        <h1 class="destaque"> Destaques</h1>
         <section class="highlights">
             <div class="highlight">
                 <h3>Baía do Sancho</h3>
-                <img src="/IMAGENS/highlight1.jpeg" alt="Baía do Sancho">
+                <img src="/src/IMAGENS/highlight1.jpeg" alt="Baía do Sancho">
                 <button data-id="1" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia do Espelho</h3>
-                <img src="/IMAGENS/highlight2.jpeg" alt="Praia do Espelho">
+                <img src="/src/IMAGENS/highlight2.jpeg" alt="Praia do Espelho">
                 <button data-id="2" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia dos Carneiros</h3>
-                <img src="/IMAGENS/highlight3.jpeg" alt="Praia dos Carneiros">
+                <img src="/src/IMAGENS/highlight3.jpeg" alt="Praia dos Carneiros">
                 <button data-id="3" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia de Jericoacoara</h3>
-                <img src="/IMAGENS/highlight4.jpg" alt="Praia de Jericoacoara">
+                <img src="/src/IMAGENS/highlight4.jpg" alt="Praia de Jericoacoara">
                 <button data-id="4" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia de Garapuá</h3>
-                <img src="/IMAGENS/highlight5.jpg" alt="Praia de Garapuá">
+                <img src="/src/IMAGENS/highlight5.jpg" alt="Praia de Garapuá">
                 <button data-id="5" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia da Ilha do Campeche</h3>
-                <img src="/IMAGENS/highlight6.jpg" alt="Praia da Ilha do Campeche">
+                <img src="/src/IMAGENS/highlight6.jpg" alt="Praia da Ilha do Campeche">
                 <button data-id="6" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia da Lagoinha do Leste</h3>
-                <img src="/IMAGENS/highlight7.jpeg" alt="Praia da Lagoinha do Leste">
+                <img src="/src/IMAGENS/highlight7.jpeg" alt="Praia da Lagoinha do Leste">
                 <button data-id="7" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia da Ponta do Corumbau</h3>
-                <img src="/IMAGENS/highlight8.webp" alt="Praia da Ponta do Corumbau">
+                <img src="/src/IMAGENS/highlight8.webp" alt="Praia da Ponta do Corumbau">
                 <button data-id="8" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia de Copacabana</h3>
-                <img src="/IMAGENS/highlight9.png" alt="Praia de Copacabana">
+                <img src="/src/IMAGENS/highlight9.png" alt="Praia de Copacabana">
                 <button data-id="9" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia de Jurerê</h3>
-                <img src="/IMAGENS/highlight10.webp" alt="Praia de Jurerê">
+                <img src="/src/IMAGENS/highlight10.webp" alt="Praia de Jurerê">
                 <button data-id="10" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia de Ponta Verde</h3>
-                <img src="/IMAGENS/highlight11.webp" alt="Praia de Ponta Verde">
+                <img src="/src/IMAGENS/highlight11.webp" alt="Praia de Ponta Verde">
                 <button data-id="11" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
+
             <div class="highlight">
                 <h3>Praia do Farol</h3>
-                <img src="/IMAGENS/highlight12.webp" alt="Praia do Farol">
+                <img src="/src/IMAGENS/highlight12.webp" alt="Praia do Farol">
                 <button data-id="12" onclick="openModal(this)">Saiba mais</button>
             </div>
-            
 
-            <script src="/JS/modal.js"></script>
+            <script src="/src/JS/modal.js"></script>
         </section>
 
         <!-- Newsletter -->
@@ -226,9 +210,9 @@
             </div>
             <div id="Sobre">
                 <h4>Sobre</h4>
-                <p><a href="Sobre.html">Quem Somos</a></p>
-                <p><a href="politicapriv.html">Política de Privacidade</a></p>
-                <p><a href="termos.html">Termos de Serviço</a></p>
+                <p><a href="/src/Sobre.html">Quem Somos</a></p>
+                <p><a href="/src/politicapriv.html">Política de Privacidade</a></p>
+                <p><a href="/src/termos.html">Termos de Serviço</a></p>
             </div>
             <div>
                 <h4>Categorias</h4>
@@ -238,8 +222,8 @@
             </div>
             <div class="social">
                 <h4>Redes Sociais</h4>
-                <img src="/IMAGENS/facebook.png" alt="Facebook">
-                <img src="/IMAGENS/insta.png" alt="Instagram">
+                <img src="/src/IMAGENS/facebook.png" alt="Facebook">
+                <img src="/src/IMAGENS/insta.png" alt="Instagram">
             </div>
         </div>
     </footer>
