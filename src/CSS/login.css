@@ -1,19 +1,19 @@
-
-* {
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    width: 100%;
 }
 
+h1, h2, h3 {
+    color: #333;
+}
 
+button {
+    cursor: pointer;
+}
 
 /* Header */
 header {
@@ -107,7 +107,7 @@ header {
   
   /* Ajuste para o ícone */
   .search-container img {
-    z-index: 11; /* Para garantir que o ícone esteja acima da barra */
+    z-index: 11; /* garantir que o ícone esteja acima da barra */
   }
   
   
@@ -153,167 +153,209 @@ header {
   .user-menu ul li a:hover {
     background-color: #1769aa;
   }
-  
-/* Banner */
-.banner {
-    text-align: center;
-    
-}
-
-.banner img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: px;
-}
-
-/* Perfil e Newsletter */
-.user-profile {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    background: #f1f1f1;
-}
-.profile-header {
+/* Área do Usuário */
+.usuario {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    padding: 50px;
+    background-color: #f3f3f3;
 }
-.profile-header h2 {
-    font-size: 1.5rem;
-    color: #0077c8;
+
+.usuario-info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
 }
-.logout-button {
-    padding: 0.5rem 1rem;
-    background: #0077c8;
+
+.usuario-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.usuario .btn-sair {
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    padding: 15px 40px;
+    transition: background-color 0.3s;
 }
-.logout-button:hover {
-    background: #005fa3;
-}
-.user-profile p {
-    font-size: 1rem;
-    color: #333;
-    margin-top: 0.5rem;
+
+.usuario .btn-sair:hover {
+    background-color: #DD2C00;
 }
 
 /* Última Review */
-.latest-review {
-    text-align: left;
-    max-width: 300px;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-.latest-review h2 {
-    font-size: 1.5rem;
-    color: #0077c8;
-    margin-bottom: 0.5rem;
-}
-.latest-review p {
-    font-size: 1rem;
-    color: #333;
+.ultima-review {
+    padding: 60px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-/* Ícones piramidais (parte direita) */
-.icon-section {
+.ultima-review .review-box img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Comentários */
+.comentarios {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comentarios h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.comentarios-container {
+    display: flex;
+    gap: 40px;
+}
+
+.coments {
+    text-align: start;
+    padding: 40px;
+}
+
+.comentarios-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.comentario {
+    background-color: #E0E0E0;
+    height: 120px;
+    width: 800px;
+    border-radius: 5px;
+}
+
+/* Área dos Ícones */
+.icones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    grid-template-rows: auto auto; /* Ajusta a altura das linhas automaticamente */
+    gap: 40px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones no grid */
+    align-items: center; /* Alinha os ícones verticalmente */
+}
+
+.icone {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    position: absolute;
-    right: 5%;  /* Posiciona os ícones na parte direita da tela */
-    top: 30%;  /* Ajusta a altura para que os ícones fiquem abaixo da área do perfil */
-}
-.icon-row {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-.icon-row.top {
-    margin-bottom: 1rem;
-}
-.icon {
-    text-align: center;
-}
-.icon img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #e0e0e0;
-    padding: 10px;
-}
-.icon h3 {
-    font-size: 1rem;
-    color: #0077c8;
-}
-.icon p {
-    font-size: 0.9rem;
-    color: #555;
+    gap: 10px;
 }
 
-/* Comentários (parte esquerda) */
-.comments {
-    text-align: left;
-    margin-top: 22rem;  /* Aumenta a margem superior para descer ainda mais os comentários */
-    margin-left: 5%;  /* Posiciona os comentários mais para a esquerda */
-    padding: 1rem;
-    max-width: 500px;
+.icone-img-bg {
+    background-color: #2196F3;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.comments textarea {
-    width: 100%;
-    height: 80px;
-    padding: 0.5rem;
-    margin-top: 1rem;
+
+.icone-img-bg img {
+    width: 60px;
+    height: 60px;
+}
+
+.icone h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.icone p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Centralizar o terceiro ícone */
+.icones div:nth-child(3) {
+    grid-column: 1 / 3; /* Faz o ícone ocupar o espaço centralizado */
+    justify-self: center; /* Centraliza na largura */
+}
+
+/* Fazer Review */
+.fazer-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
 }
-.submit-review {
-    padding: 0.5rem 1rem;
-    background: #0077c8;
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.Reviewai{
+    display: flex;
+   justify-content: start;
+    width: 100%;
+    
+}
+.Review{
+    background-color: #383838;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 1rem;
-    cursor: pointer;
-}
-.submit-review:hover {
-    background: #005fa3;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
 
-.submit-review:hover {
-    background: #005fa3;
+.btn-enviar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
 }
+
+.btn-enviar:hover {
+    background-color: #388E3C;
+}
+
 
 /* Footer */
 footer {
-    background: #0077c8;
-    color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: auto;  /* Garante que o footer sempre fique no final */
-}
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.5rem;
+    padding: 10px;
+    background-color: #222;
+    color: #FFF;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .latest-review {
-        position: static;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-    .icon-section {
-        position: static;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-    .icon-row {
-        flex-direction: column;
-    }
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: #FFF;
+    margin: 0 10px;
+    text-decoration: none;
 }
