@@ -1,0 +1,319 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  header .logo img {
+    max-height: 3.125rem; /* 50px */
+    width: auto; /* Mantém proporções */
+  }
+  
+  /* Navigation */
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    padding: 0.625rem 1.25rem;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 1.25rem;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #1769aa;
+  }
+  
+  /* User Icons */
+  .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .user-icons img {
+    max-height: 2rem; /* Ajusta para um tamanho fixo */
+    width: auto; /* Mantém proporções */
+    cursor: pointer;
+  }
+  
+  /* Search Container */
+  .search-container {
+    position: relative; /* Mantém a referência para elementos posicionados */
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container img {
+    max-height: 1.875rem; /* 30px */
+    cursor: pointer;
+  }
+  
+  .search-container .search-bar {
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Posicionado acima dos outros elementos */
+    right: 0; /* Alinha à direita do container */
+    transform: translateX(-100%); /* Expande para a esquerda */
+    width: 0; /* Largura inicial zero */
+    max-width: 15rem; /* Largura máxima ajustada (240px) */
+    padding: 0.5rem 1rem;
+    border: 2px solid #2196F3;
+    border-radius: 1.25rem;
+    outline: none;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #FFFFFF;
+    z-index: 10; /* Garante que fique acima dos outros elementos */
+    transition: all 0.3s ease; /* Animação suave ao expandir */
+  }
+  
+  .search-container.active .search-bar {
+    display: block;
+    width: 10rem; /* Largura expandida ao clicar */
+  }
+  
+  /* Ajuste para o ícone */
+  .search-container img {
+    z-index: 11; /* Para garantir que o ícone esteja acima da barra */
+  }
+  
+  
+  /* User Menu */
+  .user-menu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0.625rem;
+    box-shadow: 0px 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 10;
+    padding: 0.5rem;
+  }
+  
+  .user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-menu ul li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-menu ul li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .user-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+    background-color: #2196F3;
+    border-radius: 0.625rem;
+    padding: 0.625rem 1.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .user-menu ul li a:hover {
+    background-color: #1769aa;
+  }
+  
+/* Banner */
+.banner {
+    text-align: center;
+    
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: px;
+}
+
+/* Perfil e Newsletter */
+.user-profile {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #f1f1f1;
+}
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-header h2 {
+    font-size: 1.5rem;
+    color: #0077c8;
+}
+.logout-button {
+    padding: 0.5rem 1rem;
+    background: #0077c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout-button:hover {
+    background: #005fa3;
+}
+.user-profile p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Última Review */
+.latest-review {
+    text-align: left;
+    max-width: 300px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.latest-review h2 {
+    font-size: 1.5rem;
+    color: #0077c8;
+    margin-bottom: 0.5rem;
+}
+.latest-review p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Ícones piramidais (parte direita) */
+.icon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 5%;  /* Posiciona os ícones na parte direita da tela */
+    top: 30%;  /* Ajusta a altura para que os ícones fiquem abaixo da área do perfil */
+}
+.icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.icon-row.top {
+    margin-bottom: 1rem;
+}
+.icon {
+    text-align: center;
+}
+.icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    padding: 10px;
+}
+.icon h3 {
+    font-size: 1rem;
+    color: #0077c8;
+}
+.icon p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Comentários (parte esquerda) */
+.comments {
+    text-align: left;
+    margin-top: 22rem;  /* Aumenta a margem superior para descer ainda mais os comentários */
+    margin-left: 5%;  /* Posiciona os comentários mais para a esquerda */
+    padding: 1rem;
+    max-width: 500px;
+}
+.comments textarea {
+    width: 100%;
+    height: 80px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-review {
+    padding: 0.5rem 1rem;
+    background: #0077c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.submit-review:hover {
+    background: #005fa3;
+}
+
+.submit-review:hover {
+    background: #005fa3;
+}
+
+/* Footer */
+footer {
+    background: #0077c8;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;  /* Garante que o footer sempre fique no final */
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .latest-review {
+        position: static;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .icon-section {
+        position: static;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .icon-row {
+        flex-direction: column;
+    }
+}

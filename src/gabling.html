@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Usuário</title>
+    <link rel="stylesheet" href="/CSS/gab.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <a href="/hometest.html">
+        <img src="/IMAGENS/logo.png" alt="Elibeach Logo">
+        </a>
+        
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#">Praias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="user-icons">
+        <div class="search-container">
+            <img src="/IMAGENS/search-icon.png" alt="Search" id="search-icon">
+            <input type="text" class="search-bar" placeholder="Search in site">
+        </div>
+
+        <img src="/IMAGENS/user-icon.png" alt="User" onclick="toggleUserMenu()">
+    </div>
+    <div class="user-menu">
+        <ul>
+            <li><a href="gabling.html">Gerenciar conta</a></li>
+            <li><a href="gabling.html">Reviews</a></li>
+            <li><a href="gabling.html">Notificações</a></li>
+            <li><a href="#">Sair</a></li>
+        </ul>
+    </div>
+    <script src="/JS/searchbar.js"></script>
+</header>
+
+
+    <!-- Perfil e Newsletter -->
+    <section class="user-profile">
+        <div class="profile-header">
+            <img src="user-icon.png" alt="Ícone do Usuário">
+            <h2>Perfil do Usuário</h2>
+            <button class="logout-button">Sair</button>
+        </div>
+        <p>Sign up for our newsletter to receive updates and exclusive offers.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Última Review -->
+        <section class="latest-review">
+            <h2>Última Review</h2>
+            <p>Get the latest news and updates delivered straight to your inbox.</p>
+        </section>
+
+        <!-- Ícones em formato piramidal -->
+        <section class="icon-section">
+            <div class="icon-row top">
+                <div class="icon">
+                    <img src="exclusive-offers-icon.png" alt="Exclusive Offers">
+                    <h3>Exclusive Offers</h3>
+                    <p>Access to special promotions.</p>
+                </div>
+            </div>
+            <div class="icon-row bottom">
+                <div class="icon">
+                    <img src="stay-informed-icon.png" alt="Stay Informed">
+                    <h3>Stay Informed</h3>
+                    <p>Get the latest news and updates.</p>
+                </div>
+                <div class="icon">
+                    <img src="new-arrivals-icon.png" alt="New Arrivals">
+                    <h3>New Arrivals</h3>
+                    <p>Be the first to know about new arrivals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comentários -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <textarea placeholder="Write your review here..."></textarea>
+            <button class="submit-review">Enviar</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2022 Todos os direitos reservados</p>
+        <div class="footer-links">
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos & Condições</a>
+        </div>
+    </footer>
+</body>
+</html>

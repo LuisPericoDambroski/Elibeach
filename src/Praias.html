@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/CSS/praias.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="/src/Home.html">
+                <img src="/src/IMAGENS/logo.png" alt="Elibeach Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#">Praias</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="user-icons">
+            <div class="search-container">
+                <img src="/src/IMAGENS/search-icon.png" alt="Search" id="search-icon">
+                <input type="text" class="search-bar" placeholder="Search in site">
+            </div>
+
+            <img src="/src/IMAGENS/user-icon.png" alt="User" onclick="toggleUserMenu()">
+        </div>
+        <div class="user-menu">
+            <ul>
+                <li><a href="/src/gabling.html">Gerenciar conta</a></li>
+                <li><a href="/src/gabling.html">Reviews</a></li>
+                <li><a href="/src/gabling.html">Notificações</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
+        <script src="/src/JS/searchbar.js"></script>
+    </header>
+    <main>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="/src/IMAGENS/Rectangle 6726.png" alt="">
+    </div>
+
+    <div class="search-bar"></div>
+    <section>
+        <h1>Mais avaliadas</h1>
+        <div class="highlights">
+            <div class="highlight">
+                <img src="/src/IMAGENS/highlight1.jpg" alt="Destaque 1">
+                <button data-id="1" onclick="openModal(this)">Saiba mais</button>
+            </div>
+            <div class="highlight">
+                <img src="/src/IMAGENS/highlight2.jpg" alt="Destaque 2">
+                <button data-id="1" onclick="openModal(this)">Saiba mais</button>
+            </div>
+            <div class="highlight">
+                <img src="/src/IMAGENS/highlight3.jpg" alt="Destaque 3">
+                <button data-id="2" onclick="openModal(this)">Saiba mais</button>
+            </div>
+            <script src="/src/JS/modal.js"></script>
+        </div>
+    </section>
+    
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer-content">
+        <div id="Contato">
+            <h4>Contato</h4>
+            <p>WhatsApp: (99) 99999-9999</p>
+            <p>Email: contato@exemplo.com</p>
+            <p>Telefone: (11) 3333-3333</p>
+        </div>
+        <div id="Sobre">
+            <h4>Sobre</h4>
+            <p><a href="#">Quem Somos</a></p>
+            <p><a href="#">Política de Privacidade</a></p>
+            <p><a href="#">Termos de Serviço</a></p>
+        </div>
+        <div>
+            <h4>Categorias</h4>
+            <p><a href="#">Home</a></p>
+            <p><a href="#">Praias</a></p>
+            <p><a href="#">Blog</a></p>
+        </div>
+        <div class="social">
+            <h4>Redes Sociais</h4>
+            <img src="/src/IMAGENS/facebook-icon.png" alt="Facebook">
+            <img src="/src/IMAGENS/instagram-icon.png" alt="Instagram">
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
