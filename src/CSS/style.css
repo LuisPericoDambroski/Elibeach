@@ -107,7 +107,7 @@ body {
   
   /* Ajuste para o ícone */
   .search-container img {
-    z-index: 11; /* Para garantir que o ícone esteja acima da barra */
+    z-index: 11; /* garantir que o ícone esteja acima da barra */
   }
   
   
@@ -408,12 +408,12 @@ body {
   
   .destaque {
     text-align: center;          /* Centraliza o texto */
-    font-family: 'SuaFonte', sans-serif; /* Substitua 'SuaFonte' pela fonte que você usou no seu projeto */
-    font-size: 2rem;            /* Ajuste o tamanho da fonte conforme necessário */
-    font-weight: bold;          /* Torna o texto em negrito (opcional) */
-    margin-top: 30px;           /* Adiciona uma margem superior para separar do conteúdo acima */
+    font-family:  sans-serif; 
+    font-size: 2rem;            /*  tamanho da fonte  */
+    font-weight: bold;          /* texto em negrito  */
+    margin-top: 30px;           /*  margem superior  */
     padding: 10px;
-    margin-bottom: 30px;        /* Adiciona uma margem inferior para separar do conteúdo abaixo */
+    margin-bottom: 30px;        /*  margem inferior  */
     background-color: #7171711e;
   }
   
